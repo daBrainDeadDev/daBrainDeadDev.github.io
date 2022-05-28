@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Web Development Notes</title>
+</head>
+<body>
+	<h2>Web Development Notes</h2>
+	<br>
+	<hr size=10px color=black noshade>
+	<br>
+	<h3>Hyper Text</h3>
+	<br>
+	The main use of Hypertext is in information retrieval applications
+	<ul>
+		<li>Links information together, ie relate a term to a fragment containing it's definition and use</li>
+		<li>Can be various forms of media</li>
+		<li>Can store a large collection of textual and multimedia documents</li>
+		<li>Digital Library</li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<h3>The most important part of <b>Web Design</b> is the <i>design</i></h3>
+	<br>
+	Make sure to have a clear idea of what you want your page to look like before you start coding. This will make things so much easier when you need to make adjustments. 
+	<ul>
+		<li>Build out templates for designs so you already have a solid base to work from</li>
+		<li>Draw/sketch out all of the elements you want to incorporate and how you want them to fit on the page.</li>
+		<li>Organise and adjust your files so that everything is easily accessible for adjustments.</li>
+		<li>Edit images and videos so they are the size you want them already. It makes life <b>A LOT</b> easier!!!</li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<h3>Document Object Model (DOM)</h3>
+	<p>
+		<b>Writing Clean Code.</b> 
+	The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+
+	A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.
+	</p>
+	<ul>
+		<li>Basis of HTML5 is "New Features should be based on HTML, CSS the DOM and JavaScript..."</li>
+		<li>DOM provides common tree-like structure that all pages should follow</li>
+		<li>Computer Scientists love trees (the mathematical kind) because you can test them.</li>
+	</ul>
+	Very root of the tree is HTML tag. There are three parts to a well formed document.
+	<ul>
+		<li>DOCTYPE, version of HTML you will be using</li>
+		<!--!DOCTYPE html--> 
+		<li>Head, Metadata</li>
+		<li>Body, Displayable Content</li>
+	</ul>
+	<p>
+		Body is the bulk of the page. It is important to write "Clean Code" or well-formatted (tree-like) code so that it is easily read by different programs. 
+	</p>
+	<br>
+	<hr>
+	<br>
+	<h2>W3C WCAG 2.0</h2>
+	<p>W3C WCAG 2.0/2.1 - World Wide Web Consortium Web Content Accessibility Guildlines <!--Insert Link for website here-->
+	</p>
+	<h4><i>Principle</i>, Not technology-based.</h4>
+	<p>Defines how to make Web content more accessible to people with disabilities.<b> Accessibility</b> involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
+	</p>
+	<h4>Four Principles of W3C WCAG (POUR):</h4>
+	<ul>	
+		<li>Perceivable</li>
+		<li>Operatable</li>
+		<li>Understandable</li>
+		<li>Robust</li>
+	</ul>
+	<p>Designing with accessibility in mind is the <b>right thing to do</b>. Adhere to standards and pay special attention to the semantics behind the HTML5 tags.
+	</p>
+	<br>
+	<hr>
+	<br>
+	<h2>Validate Your Code</h2>
+	<h3>THIS IS VERY IMPORTANT!</h3>
+	<p>
+		Browsers can act like the "helicopter parents" of programming and they can fix errors in code that otherwise can go unchecked. As your pages become more complex "hidden" areas can be devastating to your webpage.
+	</p>
+	<p><a href="https://validator.w3.org/">The W3C  Markup Validation Service</a> is a perfect tool to use to stick to the same World wide standards</p>
+	<p>
+		Not only should you validate for <i>syntax</i>, but you should also validate for the accessibility of the semantics. You can use <a href="http://www.wave.webaim.org">wave.webaim.org</a> to validate for accessibility.
+	</p>
+	<p>
+		<a href="https://www.funkify.org/">Funkify Disability Simulator</a> is a great option to virtually check your website for accessibility by simulating different disabilities one may experience. Really cool site! <b>Highly Recommend</b>
+	</p>
+	<br>
+	<hr>
+	<br>
+	<h2><b>Tags</b></h2>
+	<h3>Links/Anchors</h3>
+	
+	<dl>
+		<dt>HTTP protocol to inform the browser to load a Web page when you click a hyperlink</dt>
+		<dd>&lt;<b>a href="URL"</b>&gt;link name&lt;/a&gt;</dd>
+	</dl>
+	<dl><dt>Anchor tags can be used to link to a specific location within an HTML file (even within the same HTML file)</dt>
+		<dd>Firstly, a location must be defined using the tag: &lt;a <b>name="xxxx"</b>&gt;link&lt;/a&gt; with xxx being the location name.</dd>
+		<dd>A link to the location is created using the tag &lt;a href=<b>"#xxx"</b>&gt;link&lt;/a&gt;. If the location is in another document, its file name too must be included as well: &lt;a href="<b>URL</b>#xxx"&gt;link&lt;/a&gt;</dd>
+		<dd><a id="Notes" href="https://www.cs.uct.ac.za/mit_notes/web_programming/html/ch02s03.html">Link to the Study Guide I am referencing</a></dd>
+	</dl>
+	<br>
+
+	Various other protocols may be used. For example, to create a link to an email address use the 'mailto' protocol. Note that this depends on the user's email programme being correctly configured, and so may not always work. However, this feature is commonly used on the Web to contact the webmaster or to get more information from sites. 
+	<dl>
+		<dt>The following anchor tag creates a mail link:</dt>
+		<dd> &lt;a href=<b>"mailto:username@domainname"</b>&gt;user&lt;/a&gt;</dd>
+	</dl>
+	<dl>
+		<dt>A subject line for the email message can also be provided:</dt>
+		<dd>&lt;a href="mailto:username@address.com?<b>SUBJECT=e-mail from a friend"&gt;</b>user&lt;/a&gt;</dd>
+	</dl>
+	
+	<br>
+	<hr>
+	<br>
+	<h3>Images</h3>
+	<br>
+	<p>
+	<dl>
+		<dt>The <b>&lt;img&gt;</b> tag is used to embed an image into a Web document:</dt>
+		<dd><b>&lt;img</b> src="URL" alt="Alternate Text for Screenreaders/Accessibility"&gt;</dd>
+	</dl>
+	The <b>URL</b> is the <b>location of the image file</b>. The <b>ALT attribute</b> specifies text to be displayed if the browser <b>does not display the image</b> It is <b>very important</b> to add alternative text to images that tell information to readers. If people have screenreaders, they may not be able to get access to information if they cannot see the image containing it.
+	<dl>
+		<dt><b>In-line images</b> are often placed inside <b>anchors</b>. The HTML code to create an <b>image as a hyperlink</b> is:</dt>
+		<dd><b>&lt;a href="URL"&gt;</b>&lt;img src="URL" alt="text"&gt;&lt;/a&gt;</dd>
+	</dl>
+
+
+
+	<br>
+	<hr size=10px color=black noshade>
+	<br>
+
+	<footer>
+		<p><a href="#Notes">Back to Study Guide Link Page</a></p>
+	</footer>
+</body>
